@@ -1,7 +1,7 @@
 import web
 
 
-db = web.database(dbn='postgres', db='dbgordq57q3395', user='tjasuavxsogmlk', pw='nJel9utoiLJtLqtKto5pZvjymB')
+db = web.database(host="ec2-50-17-181-147.compute-1.amazonaws.com", port="5432", dbn='postgres', db='dbgordq57q3395', user='tjasuavxsogmlk', pw='nJel9utoiLJtLqtKto5pZvjymB')
 def get_messages():
    	return db.select('message')
 
