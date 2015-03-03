@@ -1,0 +1,15 @@
+$def with (messages,form)
+ 
+ <table>
+$for message in messages:
+    <tr>
+        <td>$message.body</td>
+        <td>
+        	<a href="/api/sms/$message.sid">See Details</a>
+        </td>
+    </tr>    
+</table>  
+
+<form action="/api/sms" method="post">
+$:form.render()
+</form>
