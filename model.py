@@ -1,7 +1,7 @@
 import web
 
 
-db = web.database(dbn='postgres', db='sms', user='postgres', pw='')
+db = web.database(dbn='postgres', db='dbgordq57q3395', user='tjasuavxsogmlk', pw='nJel9utoiLJtLqtKto5pZvjymB')
 def get_messages():
    	return db.select('message')
 
