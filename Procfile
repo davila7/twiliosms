@@ -1,1 +1,1 @@
-web: python run.py ENV["PORT"]
+web: python run.py $PORT
