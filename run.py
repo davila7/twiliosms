@@ -1,11 +1,14 @@
 """ Basic restful using webpy 0.3 """
+#import web to http
 import web
+#import sms to twilio function
 import sms
+#import model to db function
 import model
+#import json to request format
 import json
 
 ### Urls
-
 urls = (
     '/api/sms', 'Index',
     '/api/sms/(.+)', 'Show'
@@ -15,7 +18,7 @@ urls = (
 ### Templates
 render = web.template.render('templates', base='base')
 
-
+#Class Index with get and post
 class Index:
 
     form = web.form.Form(
@@ -39,7 +42,7 @@ class Index:
         return json.dumps({'message': form.d.body})
 
 
-
+#Class Show with Get
 class Show:
 
     def GET(self, sid):
