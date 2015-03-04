@@ -6,10 +6,15 @@ Documentation:
 
 Heroku
 https://devcenter.heroku.com/articles/getting-started-with-python
+
 http://stackoverflow.com/questions/18117483/uploading-web-py-app-on-heroku
+
 http://stackoverflow.com/questions/15693192/heroku-node-js-error-web-process-failed-to-bind-to-port-within-60-seconds-of
+
 https://devcenter.heroku.com/articles/error-codes
+
 http://stackoverflow.com/questions/17847631/heroku-procfile-no-such-process-type-web-defined-in-procfile-error
+
 http://stackoverflow.com/questions/2671454/heroku-how-to-see-all-the-logs
 
 Postgres
