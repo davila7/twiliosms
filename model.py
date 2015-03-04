@@ -2,6 +2,7 @@
 import web
 #connect to database
 db = web.database(host="ec2-50-17-181-147.compute-1.amazonaws.com", port="5432", dbn='postgres', db='dbgordq57q3395', user='tjasuavxsogmlk', pw='nJel9utoiLJtLqtKto5pZvjymB')
+#db = web.database(dbn='postgres', db='sms', user='postgres', pw='')
 
 #function to select all message
 def get_messages():
