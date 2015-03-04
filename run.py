@@ -47,6 +47,9 @@ class Show:
 
     def GET(self, sid):
         data = model.get_message(sid)
+        if data is None:
+            messages = model.get_messages()
+            return render.index(messages,form)
         return json.dumps({'body': data[0].body})
 
 app = web.application(urls, globals())
